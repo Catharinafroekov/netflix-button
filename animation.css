@@ -1,0 +1,32 @@
+button {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color: red;
+    background-image: linear-gradient(blue, blue);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    border-radius: 20px;
+}
+
+.color-fill {
+    animation-name: color-fill;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes color-fill {
+   0%{
+    background-size: 0;
+   }
+    100% {
+        background-size: 100%;
+    }
+}
+
+.page2{
+    background-color: rgb(172, 240, 172);
+}
